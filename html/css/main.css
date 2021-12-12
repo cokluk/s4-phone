@@ -1,0 +1,546 @@
+body { margin: 0px; padding: 0px; overflow: hidden; }
+.container { display: none; position: absolute; bottom: -70%; right: 5vh; user-select: none; }
+.ustbar {
+	z-index: 150;
+	pointer-events: all;
+	position: absolute;
+	width: -webkit-fill-available;
+	transition: 1s;
+	padding: 5px;
+	height: 0vh;
+	display: none;
+	margin-top: -10px;
+	padding-top: 5vh;
+	background: rgb(0,0,0,0.5);
+	overflow:hidden;
+}
+
+.ustsol {
+	    height: 100px;
+    width: 100px;
+    backdrop-filter: blur(1px);
+    border-radius: 10px;
+    position: relative;
+    top: 6vh;
+   
+    overflow: hidden;
+	
+	    padding-top: 7px;
+    padding-left: 5px;
+    left: -47px;
+}
+
+.ust {margin-top:30px;position: relative;}
+.ust img {
+	    width: 5%;
+    position: relative;
+    top: 3vh;
+    left: 2vh;
+	   float: left;
+}
+
+.ust p {
+	    float: left;
+    color: white;
+    font-family: ios;
+    font-size: 9px;
+    position: relative;
+    top: 19px;
+    left: 20px;
+}
+
+.ustbar .xblur { }
+.phone-currentcall-container { display: none; position: absolute; margin: 0px auto; left: 0px; right: 0px; height: 5vh; width: 70%; background-color: rgba(0, 0, 0, 0.65); top: 10vh; z-index: 99; transition: background-color 0.1s linear 0s; border-radius: 3vh; animation: 2s ease 0s infinite normal none running pulse; }
+.phone-currentcall-container:hover { background-color: rgba(0, 0, 0, 0.8); }
+.phone-currentcall-icon { position: absolute; top: 1.2vh; left: 1.3vh; font-size: 1.9vh; color: white; transform: rotate(90deg); }
+@-webkit-keyframes pulse { 
+  0% { box-shadow: rgba(255, 255, 255, 0.5) 0px 0px 0px 0px; }
+  70% { box-shadow: rgba(255, 255, 255, 0) 0px 0px 0px 10px; }
+  100% { box-shadow: rgba(255, 255, 255, 0) 0px 0px 0px 0px; }
+}
+@keyframes pulse { 
+  0% { box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 0px; }
+  70% { box-shadow: rgba(255, 255, 255, 0) 0px 0px 0px 10px; }
+  100% { box-shadow: rgba(255, 255, 255, 0) 0px 0px 0px 0px; }
+}
+.phone-currentcall-title { position: absolute; top: 1vh; left: 4vh; font-size: 1.1vh; color: white; font-family: "Samsung Sans Regular"; }
+.phone-currentcall-contact { position: absolute; bottom: 1vh; left: 4vh; font-size: 1vh; color: rgba(255, 255, 255, 0.7); font-family: "Samsung Sans Regular"; }
+.phone-frame { position: absolute; width: 32vh; height: 63vh; bottom: 0px; right: 0px; margin: 5vh; z-index: 150; pointer-events: none; }
+.phone-container { height: 61.6vh; width: 29vh; bottom: 1vh; border-radius: 3vh; right: 1.7vh; margin: 5vh; overflow: hidden; position: absolute; }
+.phone-background { background-image: url("../img/backgrounds/background.gif"); background-size: cover; background-position: -0.3vh 0.5vh; background-repeat: no-repeat; }
+.phone-header { width: 100%; height: 5vh; top: -0.2vh; z-index: 141; position: absolute; color: white; }
+#phone-time { font-family: Font-1; font-size: 1.3vh; padding: 2.3vh 0px 0px 2.8vh; float: left; }
+#phone-icons { font-family: Font-1; font-size: 0.95vh; padding: 2.5vh 7.5vh 0px 0vh; float: right; }
+#phone-signal { font-size: 1vh; left: 4.8vh; top: 0.1vh; position: relative; }
+#phone-battery { transform: rotate(-90deg); left: 5.4vh; position: relative; }
+.phone-application-container { display: none; top: -160%; position: absolute; height: 92%; width: 100%; background-color: rgb(65, 65, 65); z-index: 90; }
+.phone-footer { position: absolute; bottom: 0px; height: 5vh; width: 100%; }
+.phone-home-container { position: relative; height: 2.3vh; background-color: rgba(0, 0, 0, 0); margin: 0px auto; top: 2.7vh; transform: translateY(-50%); border-radius: 0.8vh; transition: all 0.15s ease 0s; z-index: 500; }
+.phone-home-container:hover { background-color: rgba(0, 0, 0, 0); }
+.phone-home-container:hover .phone-home-button { background-color: rgba(255, 255, 255, 0.95); }
+.phone-home-button { position: relative; width: 10.8vh; height: 0.7vh; background-color: rgba(255, 255, 255, 0.75); border-radius: 0.8vh; top: 50%; transform: translateY(-50%); margin: 0px auto; transition: all 0.1s ease 0s; box-shadow: black 0px 0px 15px; }
+.phone-applications { position: relative; height: 100%; width: 100%; background-color: rgba(0, 0, 0, 0); }
+.phone-application { position: relative; top: -40px; height: 5vh; width: 5vh; left: 0vh; float: left; margin-left: 1.75vh; margin-top: 1.5vh; text-align: center; opacity: 0.9; transition: all 0.05s ease 0s; }
+.phone-application2 { -webkit-transform: scale(.9); position: relative; top: -40px; height: 5vh; width: 5vh; left: 0vh; float: left; margin-left: 1.75vh; margin-top: 1.5vh; text-align: center; opacity: 0.9; transition: all 0.05s ease 0s; }
+ 
+.phone-application:hover { opacity: 1; border-radius:30%; transition:1s; }
+.phone-footer-applications, .phone-footer-applications2 { position: absolute; width: 100%; bottom: 2vh; }
+.phone-home-applications { position: absolute; width: 100%; top: 8vh; }
+@media only screen and (max-width: 1366px) {
+  body .phone-home-applications, .phone-footer-applications, .phone-footer-applications2 { position: absolute; margin-bottom: 32%; }
+}
+@media only screen and (max-width: 1280px) {
+  body .phone-home-applications, .phone-footer-applications, .phone-footer-applications2 { position: absolute; margin-bottom: 50%; }
+}
+.phone-application > i { line-height: 4.6vh; font-size: 2vh; }
+.ApplicationIcon { color: white; }
+.phone-notification-container { position: absolute; height: 5.5vh; width: 90%; background-color: rgba(255, 255, 255, 0.9); margin: 0px auto; left: 0px; right: 0px; top: -8%; border-radius: 8px; overflow: hidden; box-shadow: rgba(0, 0, 0, 0.11) 0px 0px 10px 0px inset; z-index: 140; }
+.notification-icon { position: absolute; height: 100%; width: 5vh; text-align: center; line-height: 5.7vh; color: rgb(231, 76, 60); font-size: 2.5vh; }
+.notification-title { position: absolute; top: 1vh; left: 4.5vh; font-size: 1.1vh; font-family: "Samsung Sans Regular"; color: rgb(255, 255, 255); }
+.notification-text { position: absolute; top: 2.7vh; left: 4.5vh; font-size: 1vh; font-family: "Samsung Sans Regular"; color: rgb(0, 0, 0); width: 16vh; overflow: hidden; }
+.call-notifications { display: none; position: absolute; background: rgba(230, 125, 34, 0.918); height: 9vh; width: 34vh; bottom: 16vh; right: -35vh; border-radius: 1.7vh; z-index: -5; }
+.call-notifications-shake { animation: 0.5s ease 0s infinite normal none running shake; }
+@keyframes shake { 
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+.screen-notifications-container { display: none; position: absolute; background: rgba(46, 111, 199, 0.9); height: 9vh; width: 34vh; bottom: 5vh; right: -35vh; border-radius: 0.7vh; z-index: -5; }
+.screen-notification-icon { position: absolute; line-height: 9.3vh; left: 2vh; font-size: 3.75vh; color: white; }
+.screen-notification-title { position: absolute; line-height: 5.5vh; left: 7.5vh; color: white; font-size: 1.2em !important; font-weight: bold !important; }
+.screen-notification-content { position: absolute; top: 4.2vh; left: 7.5vh; font-size: 1.2vh; color: white; font-family: "Samsung Sans Medium"; height: 3.5vh; width: 26vh; overflow: hidden; }
+.call-notifications-icon { position: absolute; line-height: 9.3vh; left: 2vh; font-size: 3.75vh; color: white; transform: rotate(90deg); }
+.call-notifications-title { position: absolute; line-height: 5.5vh; left: 7.5vh; font-size: 1.5vh; color: white; font-family: "Samsung Sans Bold"; }
+.call-notifications-content { position: absolute; top: 4.2vh; left: 7.5vh; font-size: 1.2vh; color: white; font-family: "Samsung Sans Medium"; height: 3.5vh; width: 26vh; overflow: hidden; }
+.app-unread-alerts { position: absolute; width: 2vh; height: 2vh; top: -0.5vh; left: -0.5vh; color: white; text-align: center; line-height: 2vh; background: rgb(214, 48, 49); border-radius: 50%; font-family: "Samsung Sans Bold"; font-size: 1.1vh; }
+.emergency-button { position: absolute; right: 3vh; top: 10vh; width: 33vh; height: 20vh; background-color: rgb(0, 70, 130); border-radius: 1vh; overflow: hidden; box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 5px 1px; }
+.emergency-button-header { position: absolute; background-color: rgb(255, 255, 255); height: 3.5vh; top: 0px; width: 100%; }
+.emergency-button-footer { position: absolute; background-color: rgb(255, 255, 255); height: 2.5vh; bottom: 0px; width: 100%; }
+.police-logo-2 { position: absolute; width: 6vh; margin: 0px auto; left: 0px; right: 0px; top: 0.5vh; }
+.police-logo-3 { position: absolute; width: 15vh; margin: 0px auto; left: 0px; right: 0px; bottom: 0px; }
+.device { position: relative; border-radius: 16px; margin: 0px auto; display: inline-block; transform: scale(1); width: 100%; }
+.device .device-bezel { border-radius: inherit; padding: 36px 10px 24px; overflow: hidden; background: linear-gradient(240deg, rgb(141, 164, 195) 0%, rgb(79, 130, 133) 30%, rgb(7, 15, 10) 35%, rgb(10, 6, 6) 100%); position: relative; box-sizing: content-box; }
+.device .device-viewport {contain: strict;width: 100%;height: 645px;position: absolute;border-radius: inherit;transform: scale(1);z-index: 999;margin-top: -3px;}
+@media only screen and (max-height: 900px) {
+  .device .device-viewport { max-height: 540px; }
+}
+.containerlock { background: transparent; height: 100%; }
+.contentlock { background: white; }
+.contentlock img { height: 200px; width: 100%; object-fit: cover; object-position: center center; }
+.body-contentlock { padding: 16px; }
+.body-contentlock h3 { margin-bottom: 16px; }
+.body-contentlock p { line-height: 1.5em; margin-bottom: 8px; }
+@keyframes shake { 
+  10%, 90% { transform: translate3d(-1px, 0px, 0px); }
+  20%, 80% { transform: translate3d(2px, 0px, 0px); }
+  30%, 50%, 70% { transform: translate3d(-4px, 0px, 0px); }
+  40%, 60% { transform: translate3d(4px, 0px, 0px); }
+}
+
+
+
+
+input[type=range][orient=vertical]
+{
+    writing-mode: bt-lr; /* IE */
+    -webkit-appearance: slider-vertical; /* WebKit */
+    width: 8px;
+    height: 100px;
+    padding: 0 5px;
+}
+
+ 
+
+
+.sliderx {
+  float: right;
+}
+
+.sliderx-vertical {
+    height: 100px;
+    width: 40px;
+    margin-right: 25px;
+    margin-top: 40px;
+    overflow: hidden;
+    border-radius: 8px;
+    top: 6vh!important;
+    position: absolute!important;
+    right: -1.2vw!important;
+}
+
+.sliderx-track {
+    position: relative;
+    width: 50px;
+    height: 100%;
+    cursor: pointer;
+    background: rgb(0 0 0 / 60%);
+    border-radius: 3px;
+    box-shadow: inset 0 0 5px rgb(0 0 0 / 20%);
+}
+
+.sliderx-selection {
+  position: relative;
+  background: #fff;
+  
+  height: 50%;
+  top: 50%;
+  box-shadow: inset 0 0 5px rgba(0,0,0,.2);
+  width: 40px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.sliderx-handle {
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  background: none;
+  width:100%;
+  left:0;
+  margin-left: -5px;
+  margin-top: -10px;
+  margin-bottom: -10px;
+  border-radius: 50%;
+  
+}
+
+.fa-sun {
+    position: absolute;
+    z-index: 1;
+    bottom: 10px;
+    font-size: 18px;
+    left: 11px;
+    color: rgb(113 113 113 / 56%);
+}
+
+
+
+.slider2x .fa-volume-up {
+    position: absolute;
+    z-index: 1;
+    bottom: 10px;
+    font-size: 18px;
+    left: 10px;
+    color: rgb(113 113 113 / 56%);
+}
+
+
+.altx img {
+	
+margin-right: 2px;
+	
+margin: 2px;
+	
+width: 18%;
+	
+border-radius: 10px;
+	
+backdrop-filter: blur(5px);
+	
+padding: 10px;
+	
+background: radial-gradient(black, transparent);
+}
+
+
+
+.slider2x {
+  float: right;
+}
+
+.slider2x-vertical {
+    height: 100px;
+    width: 40px;
+    margin-right: 10px;
+    margin-top: 40px;
+    overflow: hidden;
+    border-radius: 8px;
+    top: 6vh!important;
+    position: absolute!important;
+    right: 3.4vw!important;
+}
+
+.slider2x-track {
+    position: relative;
+    width: 50px;
+    height: 100%;
+    cursor: pointer;
+    background: rgb(0 0 0 / 60%);
+    border-radius: 3px;
+    box-shadow: inset 0 0 5px rgb(0 0 0 / 20%);
+}
+
+.slider2x-selection {
+  position: relative;
+  background: #fff;
+  
+  height: 50%;
+  top: 50%;
+  box-shadow: inset 0 0 5px rgba(0,0,0,.2);
+  width: 40px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.slider2x-handle {
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  background: none;
+  width:100%;
+  left:0;
+  margin-left: -5px;
+  margin-top: -10px;
+  margin-bottom: -10px;
+  border-radius: 50%;
+  
+}
+
+
+.bildirimler {
+	width: 100%;
+	height: 150px;
+	position: relative;
+	top: 2vh;
+}
+
+
+.bildirim {
+	display: none;
+	width: -webkit-fill-available;
+	height: 50px;
+	backdrop-filter: blur(5px);
+	margin-left: 5px;
+	margin-right: 5px;
+	border-radius: 1vh;
+	margin-top:5px;
+	background: rgb(0 0 0 / 35%);
+}
+
+
+.bildirim img {
+	width: 10%;
+	position: absolute;
+	top: 1vh;
+	border-radius: 100%;
+	left: 1vw;
+}
+
+
+#spotify_uyg_adi , #yt_uyg_adi {
+	font-family: 'ios';
+	font-size: 16px;
+	color: white;
+	background: none;
+	border: none;
+	left: 5vh;
+	top: 3px;
+	position: absolute;
+	text-shadow: 0px 0px 8px grey;
+}
+
+#spotify_uyg_metni , #yt_uyg_metni {
+	font-family: 'ios';
+	font-size: 12px;
+	color: white;
+	background: none;
+	border: none;
+	left: 5vh;
+	top: 22px;
+	font-family: 'ios';
+	position: absolute;
+	text-shadow: 0px 0px 8px grey;
+}
+
+
+
+
+
+
+
+
+input[type="range"] {
+    margin: auto;
+    -webkit-appearance: none;
+    position: relative;
+    overflow: hidden;
+    height: 4vh;
+    cursor: pointer;
+    width: -webkit-fill-available!important;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+    box-shadow: inset 0px 0px 8px black;
+}
+
+::-webkit-slider-runnable-track {
+  background:#c2c2c2;
+}
+
+/*
+ * 1. Set to 0 width and remove border for a slider without a thumb
+ */
+::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 20px; /* 1 */
+    height: 40px;
+    border: 1px solid #fdfdfd;
+    background: #fdfdfd;
+    
+    box-shadow: -100vw 0 0 100vw #fdfdfd;
+   
+}
+
+
+.kilitli {
+	display:none;
+	width: -webkit-fill-available;
+    height: -webkit-fill-available;
+    background-image: url(/html/img/backgrounds/wallpaper_default_dark.png);
+    background-size: cover;
+    background-position: -0.3vh 0.5vh;
+    background-repeat: no-repeat;
+    z-index: 500;
+}
+ 
+
+ @keyframes color-change {
+  0% { color: #a9a9a9; }
+  10% { color: #2be02b; }
+  50% { color: #00ffd0k; }
+  100% { color: #fff; }
+}
+
+.hh2 {
+	color: white;
+    margin-top: 16vh;
+    font-size: 14px;
+    text-shadow: 0px 0px 20px black;
+    font-family: 'ios';
+}
+
+.fa-fingerprint {
+    font-size: 40px;
+    position: relative;
+    margin: auto;
+    top: 10vh;
+    padding: 0.8rem;
+    animation: color-change 3s infinite;
+    background: #ffffff38;
+    border-radius: 100%;
+}
+
+.BTT {
+	width: -webkit-fill-available;
+    height: 345px;
+    border-radius: 9px;
+    background: white;
+    position: absolute;
+    top: 8vh;
+    margin-left: 10px;
+    margin-right: 10px;
+    box-shadow: 0px 0px 20px 0px white;
+	overflow:hidden;
+}
+
+
+.hdr {
+	 width: -webkit-fill-available;
+    text-align: center;
+    position: absolute;
+    top: 0vh;
+    height: auto;
+}
+
+.hdr h4 { font-size:12px }
+
+.altyk {
+	position: absolute;
+    background: #e8e8e8;
+    width: -webkit-fill-available;
+    height: 40px;
+    bottom: 0;
+}
+
+.yakindakiler {
+	    position: relative;
+    top: 5vh;
+}
+
+.oyuncu input {
+    font-size: 11px;
+    width: 100px;
+    font-family: 'ios';
+    margin-left: 5px;
+    border: none;
+    background: none;
+}
+
+.oyuncu tr {
+	margin-top: 5px;
+    display: block;
+    margin-left: 3px;
+}
+
+.s4SHRGELD {
+	display:none;
+	width: -webkit-fill-available;
+    height: 170px;
+    position: absolute;
+    margin: auto;
+    background: white;
+    border-radius: 10px;
+    z-index: 1800;
+    margin-left: 15px;
+    margin-right: 15px;
+    top: 15vh;
+    box-shadow: 0px 0px 20px #adadad;
+}
+ 
+.oyuncu .takipbtn { margin-right:2px; }
+
+
+
+.galeri-embed {
+	width: -webkit-fill-available;
+    height: 700px;
+    background: white;
+    z-index: 100;
+    position: absolute;
+	display:none;
+}
+
+.fotogoster {
+	display:none;
+    background: rgb(0 0 0 / 49%);
+    width: -webkit-fill-available;
+    height: 100vh;
+	position: absolute;
+	z-index: 1000;
+}
+
+.fa-times-circle {
+	color: white;
+    position: absolute;
+    top: 4vh;
+    right: 11vh;
+    font-size: 42px;
+}
+
+#imaj {
+	margin: auto;
+    width: 70%;
+    height: 70vh;
+    padding: 10px;
+    margin-top: 100px;
+    background: url(https://images.unsplash.com/photo-1550613097-fe6c2c321cd3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8Nnx8fGVufDB8fHx8&w=1000&q=80);
+    background-size: cover;
+}

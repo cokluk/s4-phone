@@ -1,0 +1,877 @@
+.spotify-app {
+    display: none;
+    height: 102%;
+    width: 100%;
+    background: black;
+    overflow: hidden;
+}
+ 
+.spotify-header {
+    position: absolute;
+    width: 100%;
+    height: 9vh;
+    background-color: #25b523;
+    top: 0;
+    border-bottom: .3vh solid #003666;
+    color: white;
+    font-family: 'Samsung Sans Medium';
+    font-size: 1.8vh;
+}
+
+.spotify-header > p {
+    line-height: 12vh;
+    text-indent: 2vh;
+}
+
+.spotify-header > span {
+    position: absolute;
+    top: 9vh;
+    left: 2vh;
+    font-size: 1.2vh;
+    height: 2vh;
+    color: rgba(255, 255, 255, 0.842);
+}
+
+.spotify-list {
+    position: absolute;
+    background-color: #00000033;
+    width: 90%;
+    height: 73%;
+
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    bottom: 3%;
+
+    border-radius: .5vh;
+
+    overflow-y: scroll;
+}
+
+.spotify-list::-webkit-scrollbar {
+    display: none;
+}
+
+.spotify-list {
+    position: relative;
+    width: 95%;
+    height: 6vh;
+    background-color: rgba(31, 31, 31, 0.89);
+    margin: 2.5%;
+
+    border-radius: .5vh;
+}
+
+.spotify-list-firstletter {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 3.5vh;
+    height: 3.5vh;
+    background-color: rgb(42, 137, 214);
+    text-align: center;
+    left: 1vh;
+    line-height: 3.5vh;
+    border-radius: 50%;
+    font-family: 'Samsung Sans Medium';
+    font-size: 1.8vh;
+
+    color: rgb(255, 255, 255);
+}
+
+.spotify-list-fullname {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 5.5vh;
+    font-family: 'Samsung Sans Medium';
+    font-size: 1.5vh;
+
+    max-width: 14vh;
+
+    white-space: nowrap;
+    overflow: hidden !important;
+    text-overflow: ellipsis;
+
+    color: rgb(255, 255, 255);
+}
+
+.no-spotify {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-family: 'Samsung Sans Medium';
+    font-size: 1.3vh;
+
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+
+    max-width: 14vh;
+
+    color: rgb(255, 255, 255);
+}
+
+.spotify-list-call {
+    color: white;
+    position: absolute;
+    top: 25%;
+    transform: translateY(-50%);
+
+    right: 2vh;
+    font-size: 2vh;
+    transform: rotate(90deg);
+
+    transition: .08s ease-in-out;
+}
+
+.spotify-list-call:hover {
+    color: rgb(66, 161, 11);
+    opacity: .8;
+
+    transform: rotate(0deg);
+
+    cursor: pointer;
+}
+
+
+
+
+.safari-app {
+    display: none;
+    margin-top: 85px;
+    height: 86%;
+    width: 100%;
+    background: rgb(243, 243, 243);
+    overflow: hidden;
+}
+ 
+.safari-header {
+    position: absolute;
+    width: 100%;
+    height: 9vh;
+    background-color: #25b523;
+    top: 0;
+    border-bottom: .3vh solid #003666;
+    color: white;
+    font-family: 'Samsung Sans Medium';
+    font-size: 1.8vh;
+}
+
+.safari-header > p {
+    line-height: 12vh;
+    text-indent: 2vh;
+}
+
+.safari-header > span {
+    position: absolute;
+    top: 9vh;
+    left: 2vh;
+    font-size: 1.2vh;
+    height: 2vh;
+    color: rgba(255, 255, 255, 0.842);
+}
+
+.safari-list {
+    position: absolute;
+    background-color: #00000033;
+    width: 90%;
+    height: 73%;
+
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    bottom: 3%;
+
+    border-radius: .5vh;
+
+    overflow-y: scroll;
+}
+
+.safari-list::-webkit-scrollbar {
+    display: none;
+}
+
+.safari-list {
+    position: relative;
+    width: 95%;
+    height: 6vh;
+    background-color: rgba(31, 31, 31, 0.89);
+    margin: 2.5%;
+
+    border-radius: .5vh;
+}
+
+.safari-list-firstletter {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 3.5vh;
+    height: 3.5vh;
+    background-color: rgb(42, 137, 214);
+    text-align: center;
+    left: 1vh;
+    line-height: 3.5vh;
+    border-radius: 50%;
+    font-family: 'Samsung Sans Medium';
+    font-size: 1.8vh;
+
+    color: rgb(255, 255, 255);
+}
+
+.safari-list-fullname {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 5.5vh;
+    font-family: 'Samsung Sans Medium';
+    font-size: 1.5vh;
+
+    max-width: 14vh;
+
+    white-space: nowrap;
+    overflow: hidden !important;
+    text-overflow: ellipsis;
+
+    color: rgb(255, 255, 255);
+}
+
+.no-safari {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-family: 'Samsung Sans Medium';
+    font-size: 1.3vh;
+
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+
+    max-width: 14vh;
+
+    color: rgb(255, 255, 255);
+}
+
+.safari-list-call {
+    color: white;
+    position: absolute;
+    top: 25%;
+    transform: translateY(-50%);
+
+    right: 2vh;
+    font-size: 2vh;
+    transform: rotate(90deg);
+
+    transition: .08s ease-in-out;
+}
+
+.safari-list-call:hover {
+    color: rgb(66, 161, 11);
+    opacity: .8;
+
+    transform: rotate(0deg);
+
+    cursor: pointer;
+}
+
+
+.kamera-app {
+    display: none;
+    margin-top: 65px;
+    height: 100%;
+    width: 100%;
+    background: rgb(0 0 0);
+    overflow: hidden;
+}
+ 
+.kamera-header {
+    position: absolute;
+    width: 100%;
+    height: 9vh;
+    background-color: #000000;
+    top: 0;
+    color: white;
+    font-family: 'Samsung Sans Medium';
+    font-size: 1.8vh;
+}
+
+.kamera-header > p {
+    line-height: 12vh;
+    text-indent: 2vh;
+}
+
+.kamera-header > span {
+    position: absolute;
+    top: 9vh;
+    left: 2vh;
+    font-size: 1.2vh;
+    height: 2vh;
+    color: rgba(255, 255, 255, 0.842);
+}
+
+.kamera-list {
+    position: absolute;
+    background-color: #00000033;
+    width: 90%;
+    height: 73%;
+
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    bottom: 3%;
+
+    border-radius: .5vh;
+
+    overflow-y: scroll;
+}
+
+.kamera-list::-webkit-scrollbar {
+    display: none;
+}
+
+.kamera-list {
+    position: relative;
+    width: 95%;
+    height: 6vh;
+    background-color: rgba(31, 31, 31, 0.89);
+    margin: 2.5%;
+
+    border-radius: .5vh;
+}
+
+.kamera-list-firstletter {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 3.5vh;
+    height: 3.5vh;
+    background-color: rgb(42, 137, 214);
+    text-align: center;
+    left: 1vh;
+    line-height: 3.5vh;
+    border-radius: 50%;
+    font-family: 'Samsung Sans Medium';
+    font-size: 1.8vh;
+
+    color: rgb(255, 255, 255);
+}
+
+.kamera-list-fullname {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 5.5vh;
+    font-family: 'Samsung Sans Medium';
+    font-size: 1.5vh;
+
+    max-width: 14vh;
+
+    white-space: nowrap;
+    overflow: hidden !important;
+    text-overflow: ellipsis;
+
+    color: rgb(255, 255, 255);
+}
+
+.no-kamera {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-family: 'Samsung Sans Medium';
+    font-size: 1.3vh;
+
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+
+    max-width: 14vh;
+
+    color: rgb(255, 255, 255);
+}
+
+.kamera-list-call {
+    color: white;
+    position: absolute;
+    top: 25%;
+    transform: translateY(-50%);
+
+    right: 2vh;
+    font-size: 2vh;
+    transform: rotate(90deg);
+
+    transition: .08s ease-in-out;
+}
+
+.kamera-list-call:hover {
+    color: rgb(66, 161, 11);
+    opacity: .8;
+
+    transform: rotate(0deg);
+
+    cursor: pointer;
+}
+
+.kamera-app h1 {
+	text-align: center;
+    color: white;
+    font-family: ios;
+    font-size: 14px;
+    position: relative;
+    top: 16vh;
+}
+
+
+.cekilen_foto {
+	display:none;
+	width: -webkit-fill-available;
+	height: 250px;
+	margin-left: 5px;
+	overflow:hidden;
+	margin-right: 25px;
+	background: #ffffff;
+	z-index: 100;
+	margin-left: 25px;
+	position: absolute;
+	border-radius: 5px;
+	box-shadow: inset 0px 0px 7px black;
+}
+
+
+.foto {
+
+	background: url(#);
+    width: -webkit-fill-available;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+}
+
+.alt_footer a {
+    border-radius: 30px;
+    margin-left: 46px;
+    margin-right: 20px;
+    width: 190px;
+    position: relative;
+    font-size: 16px;
+    text-align: center;
+    top: 1.6vh;
+    height: 10px;
+    background: rgb(255 255 255 / 49%);
+}
+ 
+ 
+ 
+ .galeri-app {
+    display: none;
+    width: 100%;
+    background: rgb(243, 243, 243);
+    overflow: hidden;
+    height: 110%;
+}
+ 
+.galeri-header {
+    position: relative;
+    width: 100%;
+    height: 9vh;
+    background-color: white;
+    top: 0;
+    box-shadow: 0px 0px 6px black;
+    color: white;
+    font-family: 'ios';
+    font-size: 1.8vh;
+}
+
+
+.galeri-box {
+    width: -webkit-fill-available;
+    margin-left: 5px;
+    margin-right: 5px;
+    height: 340px;
+    position: relative;
+    top: auto;
+    margin-top: 5px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+
+.img {
+    background: url(#);
+    height: 45px;
+    width: 45px;
+    background-size: cover;
+    background-position: 20%;
+}
+
+.img:hover {
+        filter:blur(1px);
+ 
+}
+
+.galeri-box::-webkit-scrollbar {
+  display: none;
+}
+
+.grid2-container {
+display: grid;
+    grid-template-columns: 45px 45px 45px 45px;
+    grid-column-gap: 2px;
+}
+.grid2-item {
+    padding: 2px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.gridembed-container {display: grid;grid-template-columns: 60px 60px 60px 60px;grid-column-gap: 10px;margin-left: 10px;}
+.gridembed-item {
+    padding: 2px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.gridinsta-container {
+display: grid;
+    grid-template-columns: 45px 45px 45px 45px;
+    grid-column-gap: 2px;
+	    margin-left: 7px;
+    margin-top: 2px;
+}
+.gridinsta-item {
+    padding: 2px;
+    font-size: 30px;
+    text-align: center;
+}
+
+
+.gridinsta2-container {
+display: grid;
+    grid-template-columns: 45px 45px 45px 45px;
+    grid-column-gap: 2px;
+	    margin-left: 7px;
+    margin-top: 2px;
+}
+.gridinsta2-item {
+    padding: 2px;
+    font-size: 30px;
+    text-align: center;
+}
+
+
+.grid6-container {
+     display: grid;
+     grid-template-columns: auto auto auto auto;
+     margin-left: 4px;
+     grid-column-gap: 5px;
+     width: -webkit-fill-available;
+     margin-right: 10px;
+}
+.grid6-item {
+    padding: 2px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.grid6-item img {
+    width:50px;
+}
+
+
+
+.galeri-header > p {
+    color: black;
+    text-indent: unset;
+    text-align: center;
+    line-height: 14vh;
+}
+
+.galeri-header > span {
+    position: absolute;
+    top: 9vh;
+    left: 2vh;
+    font-size: 1.2vh;
+    height: 2vh;
+    color: rgba(255, 255, 255, 0.842);
+}
+
+.galeri-list {
+    position: absolute;
+    background-color: #00000033;
+    width: 90%;
+    height: 73%;
+
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    bottom: 3%;
+
+    border-radius: .5vh;
+
+    overflow-y: scroll;
+}
+
+.galeri-list::-webkit-scrollbar {
+    display: none;
+}
+
+.galeri-list {
+    position: relative;
+    width: 95%;
+    height: 6vh;
+    background-color: rgba(31, 31, 31, 0.89);
+    margin: 2.5%;
+
+    border-radius: .5vh;
+}
+
+.galeri-list-firstletter {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 3.5vh;
+    height: 3.5vh;
+    background-color: rgb(42, 137, 214);
+    text-align: center;
+    left: 1vh;
+    line-height: 3.5vh;
+    border-radius: 50%;
+    font-family: 'Samsung Sans Medium';
+    font-size: 1.8vh;
+
+    color: rgb(255, 255, 255);
+}
+
+.galeri-list-fullname {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 5.5vh;
+    font-family: 'Samsung Sans Medium';
+    font-size: 1.5vh;
+
+    max-width: 14vh;
+
+    white-space: nowrap;
+    overflow: hidden !important;
+    text-overflow: ellipsis;
+
+    color: rgb(255, 255, 255);
+}
+
+.no-galeri {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-family: 'Samsung Sans Medium';
+    font-size: 1.3vh;
+
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+
+    max-width: 14vh;
+
+    color: rgb(255, 255, 255);
+}
+
+.galeri-list-call {
+    color: white;
+    position: absolute;
+    top: 25%;
+    transform: translateY(-50%);
+
+    right: 2vh;
+    font-size: 2vh;
+    transform: rotate(90deg);
+
+    transition: .08s ease-in-out;
+}
+
+.galeri-list-call:hover {
+    color: rgb(66, 161, 11);
+    opacity: .8;
+
+    transform: rotate(0deg);
+
+    cursor: pointer;
+}
+
+.n-header a {    text-decoration: none;
+    color: orange;}
+	.n-header a:hover {    text-decoration: none;
+    color: orange;}
+
+.n-header {
+    width: -webkit-fill-available;
+    background: white;
+    padding-top: 50px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: 2px;
+    font-size: 16px;
+    margin-right: 3px;
+    color: orange;
+}
+
+
+
+
+@media only screen and (min-height: 900px) {
+
+.grid2-container {
+    display: grid;
+    grid-template-columns: 65px 65px 65px 65px;
+    grid-column-gap: 7px;
+    margin-left: 7px;
+}
+
+.img {
+	height: 65px;
+	width: 65px;
+}
+
+
+#hesapmakinesiframe {
+	height: 660px;
+}
+
+.xFrame {
+	margin-top: 13px!important;
+}
+
+
+.ust p {
+	top: 2.9vh!important;
+	left: 1.3vw!important;
+}
+	
+	.ustsol {left: -3vw!important;} 
+	
+	
+	.slider2x-vertical {
+	right: 5vw!important;
+	top: 4.5vh!important;
+	zoom: 105%;
+	}
+	
+	.sliderx-vertical {
+		right: 1.5vw!important;
+		top: 4.5vh!important;
+		zoom: 105%;
+	}
+	
+	.i-aktivite-yok {zoom: 90%!important;}
+	
+	.insta-panel {
+		height: 470px!important;
+	}
+	
+	.instagram-footer .i {margin-left: 92px!important;margin-top: 45px;}
+	.instagram-logo { left: 14vh!important; }
+	
+	.gridinsta2-container {
+		grid-template-columns: 65px 65px 65px 65px;
+		grid-column-gap: 7px;
+		margin-left: 11px;
+	}
+	
+	#insta-biyo {     margin-top: 30px!important; }
+	.insta-profil-ust {    height: 120px!important; }
+	.gridinsta-container {
+    grid-template-columns: 65px 65px 65px 65px!important;
+    grid-column-gap: 7px!important;
+    }
+	
+	.grid5-container {
+	
+bottom: -30%!important;
+	}
+	
+	.imgSinsta {top: 150px!important;}
+	.photoShowinsta {    height: -webkit-fill-available!important;}
+	
+	.bank-app-account-number {
+		top: 2vh!important;
+	}
+	.bank-app-account-balance {top: 3.5vh!important;}
+	
+	
+	
+	.imgS {
+		top: 163px!important;
+	}
+	
+	.photoShow { height:700px!important;  }
+	
+	.grid4-container {
+		bottom: -30%!important;  } 
+ 
+	
+	.share_gif {
+    height: 150px!important;
+	width: -webkit-fill-available!important;
+	}
+	
+	#gifinput {     margin-right: 65px!important; }
+	
+ .cart h2 {top: -1vh!important;}
+ 
+ .cart img {width: 10%;margin-top: 11px!important;}
+ 
+ .calendar {
+	 
+	     width: 15vw!important;
+	 zoom: 47%!important;
+ }
+ 
+  
+ .altx {
+	}
+	
+	.yuzde100 { left: -3vh!important;  }
+	
+	
+	#res_hava {
+		right: -26vh!important;
+    top: -5vh!important;
+	zoom: 75%!important;
+	}
+	
+	 .derece	 {
+	     font-size: 36px!important;
+    left: 1vw!important;
+    top: 3vh!important;
+    color: white!important;
+ }
+ 
+ .ekrandondur  {
+	display: block;
+    top: 46vh;
+    left: -10vh;
+    transform: rotate(-90deg);
+    zoom: 200%;
+ }
+	
+	.bildirim img {width: 10%;}
+	
+	#spotify_uyg_adi, #yt_uyg_adi {     left: 5vh; }
+	#spotify_uyg_metni, #yt_uyg_metni { left: 5vh; }
+	
+}
+
+
+ .ekrandondur  {
+	display: block;
+	top: 79vh;
+	left: -2vh;
+	transform: rotate(-90deg);
+	zoom: 200%;
+	}
+ 
+ 
+ 

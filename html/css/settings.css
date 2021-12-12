@@ -1,0 +1,588 @@
+.settings-app {
+    display: none;
+    height: 108%;
+    width: 100%;
+    background: #f0eff4;
+    overflow: hidden;
+}
+
+.settings-app-header {
+    position: relative;
+    padding: 5vh 0 0 1.85vh;
+    font-family: 'ios';
+    font-size: 2vh;
+}
+
+.settings-app-tab-appereance {
+    position: absolute;
+    top: 9vh;
+    height: 100%;
+    width: 100%;
+}
+
+.settings-app-tab-information {
+    position: absolute;
+    top: 15vh;
+    height: 100%;
+    width: 100%;
+}
+
+.settings-app-tab {
+    position: relative;
+    width: 100%;
+    height: 4vh;
+    margin: 0 auto;
+    margin-bottom: 4px;
+    transition: all .1s;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.0);
+    box-shadow: 0px 0px 1px grey;
+    background: #fff;
+}
+
+.settings-app-tab:hover {
+     
+}
+
+.settings-app-tab-header {
+    position: absolute;
+    top: -2.5vh;
+    height: 2.6vh;
+    font-family: 'ios';
+    font-size: 1.5vh;
+    width: 100%;
+    margin-left: 3px;
+}
+
+.settings-app-tab-header > p {
+    padding-left: 1vh;
+    color: black;
+}
+
+.settings-tab-icon {
+    position: absolute;
+    left: 2vh;
+    top: 1vh;
+    font-size: 2vh;
+}
+
+.settings-tab-icon > img {
+    position: absolute;
+    width: 3vh;
+    height: 3vh;
+    border-radius: 50%;
+    box-shadow: 0 0 .5vh 0 rgba(0, 0, 0, 0.05);
+    margin-left: -.3vh;
+    top: -3px;
+}
+
+.settings-tab-title {
+    position: absolute;
+    left: 6.2vh;
+    top: 1.2vh;
+    font-size: 1.3vh;
+    font-family: 'ios';
+}
+
+.settings-tab-description {
+    position: absolute;
+    left: 6.2vh;
+    top: 3.2vh;
+    font-size: 1.2vh;
+    font-family: 'ios';
+    color: rgba(0, 0, 0, 0.65);
+}
+
+.settings-background-tab {
+    display: block;
+    position: absolute;
+    top: -100%;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    right: 0;
+    background: rgb(230, 230, 230);
+}
+
+.settings-profilepicture-tab {
+    display: block;
+    position: absolute;
+    top: -100%;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    right: 0;
+    background: white;
+}
+
+.background-options {
+    position: absolute;
+    height: 50%;
+    width: 100%;
+    top: 13vh;
+}
+
+.background-option {
+    position: relative;
+    width: 100%;
+    height: 25%;
+    background-color: rgb(223, 223, 223);
+}
+
+.background-option-icon {
+    position: absolute;
+    height: 100%;
+    width: 6vh;
+    text-align: center;
+    line-height: 7vh;
+    font-size: 2.3vh;
+    color: #fbc531;
+}
+
+.background-option-title {
+    position: absolute;
+    left: 6vh;
+    top: 1.5vh;
+    text-align: center;
+    font-size: 1vh;
+    color: #030303;
+    font-size: 1.3vh;
+    font-family: 'ios';
+}
+
+.background-option-description {
+    position: absolute;
+    left: 6vh;
+    top: 3.6vh;
+    text-align: center;
+    font-size: 1vh;
+    color: #030303b9;
+    font-size: 1.1vh;
+    font-family: 'ios';
+}
+
+.background-option-current {
+    position: absolute;
+    right: 3vh;
+    top: 2.5vh;
+    text-align: center;
+    font-size: 1.6vh;
+    color: #030303b9;
+    font-family: 'ios';
+}
+
+.background-buttons {
+    position: absolute;
+    bottom: 0;
+    height: 5vh;
+    width: 100%;
+}
+
+.background-button {
+    position: relative;
+    float: left;
+    height: 100%;
+    width: 50%;
+    text-align: center;
+    line-height: 4.7vh;
+    color: black;
+    font-family: 'ios';
+    font-size: 1.5vh;
+    transition: .05s;
+    border-top: 2px solid #e8421800;
+}
+
+.background-button:hover {
+    background-color: #dadbdb;
+    border-top: 2px solid #e84118;
+}
+
+.background-custom {
+    display: none;
+    position: absolute;
+    height: 40%;
+    width: 80%;
+    background-color: rgb(245, 245, 245);
+    box-shadow: inset 0px 0px 5px 0px rgba(0, 0, 0, 0.247);
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: -23vh;
+    border-radius: 2vh;
+    overflow: hidden;
+}
+
+.background-custom-title {
+    font-family: 'ios';
+    padding: 2vh;
+    font-size: 1.5vh;
+    text-align: center;
+}
+
+.custom-background-input {
+    position: absolute;
+    left: 1vh;
+    background: none;
+    border: none;
+    outline: none;
+    height: 3.5vh;
+    width: 21vh;
+    font-family: 'ios';
+    background: rgb(235, 235, 235);
+    border-radius: 2vh;
+    text-align: center;
+}
+
+.custom-background-input::placeholder {
+    text-align: center;
+}
+
+.background-custom-buttons {
+    position: absolute;
+    bottom: 2vh;
+    width: 100%;
+    height: 5vh;
+}
+
+.custom-background-button {
+    position: relative;
+    float: left;
+    height: 100%;
+    width: 50%;
+    text-align: center;
+    line-height: 4.1vh;
+    color: black;
+    font-family: 'ios';
+    font-size: 1.5vh;
+    transition: .08s;
+    border-bottom: 2px solid #e8421800;
+}
+
+.custom-background-button:hover {
+    background-color: #dadbdb65;
+    border-bottom: 2px solid #e84118;
+}
+
+
+.profilepicture-options {
+    position: absolute;
+    height: 50%;
+    width: 100%;
+    top: 13vh;
+}
+
+.profilepicture-option {
+    position: relative;
+    width: 100%;
+    height: 25%;
+    background-color: white;
+}
+
+.profilepicture-option-icon {
+    position: absolute;
+    height: 100%;
+    width: 6vh;
+    text-align: center;
+    line-height: 7vh;
+    font-size: 2.3vh;
+    color: #fbc531;
+}
+
+.profilepicture-option-title {
+    position: absolute;
+    left: 6vh;
+    top: 1.5vh;
+    text-align: center;
+    font-size: 1vh;
+    color: #030303;
+    font-size: 1.3vh;
+    font-family: 'ios';
+}
+
+.profilepicture-option-description {
+    position: absolute;
+    left: 6vh;
+    top: 3.6vh;
+    text-align: center;
+    font-size: 1vh;
+    color: #030303b9;
+    font-size: 1.1vh;
+    font-family: 'ios';
+}
+
+.profilepicture-option-current {
+    position: absolute;
+    right: 3vh;
+    top: 2.5vh;
+    text-align: center;
+    font-size: 1.6vh;
+    color: #030303b9;
+    font-family: 'ios';
+}
+
+.profilepicture-buttons {
+    position: absolute;
+    bottom: 0;
+    height: 5vh;
+    width: 100%;
+}
+
+.profilepicture-button {
+    position: relative;
+    float: left;
+    height: 100%;
+    width: 50%;
+    text-align: center;
+    line-height: 4.7vh;
+    color: black;
+    font-family: 'ios';
+    font-size: 1.5vh;
+    transition: .05s;
+    border-top: 2px solid #e8421800;
+}
+
+.profilepicture-button:hover {
+    background-color: #dadbdb;
+     
+}
+
+.profilepicture-custom {
+    display: none;
+    position: absolute;
+    height: 40%;
+    width: 90%;
+    background-color: white;
+    box-shadow: 0px 0px 5px 0px rgb(0 0 0 / 25%);
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: -23vh;
+    border-radius: 2vh;
+    overflow: hidden;
+}
+
+.profilepicture-custom-title {
+    font-family: 'ios';
+    padding: 2vh;
+    font-size: 1.5vh;
+    text-align: center;
+}
+
+.custom-profilepicture-input {
+    position: absolute;
+    left: 1vh;
+    /* profilepicture: none; */
+    border: none;
+    outline: none;
+    height: 3.5vh;
+    width: 21vh;
+    font-family: 'ios';
+    /* profilepicture: rgb(235, 235, 235); */
+    border-radius: 2vh;
+    text-align: center;
+}
+
+.custom-profilepicture-input::placeholder {
+    text-align: center;
+}
+
+.profilepicture-custom-buttons {
+    position: absolute;
+    bottom: 2vh;
+    width: 100%;
+    height: 5vh;
+}
+
+.custom-profilepicture-button {
+    position: relative;
+    float: left;
+    height: 100%;
+    padding-top: 4px;
+    width: 50%;
+    margin-top: 15px;
+    text-align: center;
+    line-height: 4.1vh;
+    color: black;
+    font-family: 'ios';
+    font-size: 1.5vh;
+    transition: .08s;
+    border-bottom: 2px solid #e8421800;
+}
+
+.custom-profilepicture-button:hover {
+    background-color: #dadbdb65;
+}
+
+/* The switch - the box around the slider */
+.switch {
+    position: absolute;
+    /* display: inline-block; */
+    width: 50px;
+    height: 24px;
+    top: 50%;
+    right: 3vh;
+    zoom: 70%;
+    transform: translateY(-50%);
+}
+  
+/* Hide default HTML checkbox */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+  
+/* The slider */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+  
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+  
+input:checked + .slider {
+    background-color: #4bd663;
+    box-shadow: inset 0px 0px 20px #7d7d7d66;
+}
+  
+input:focus + .slider {
+    box-shadow: 0 0 1px #4bd663;
+}
+  
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+  
+/* Rounded sliders */
+.slider.round {
+    border-radius: 24px;
+}
+  
+.slider.round:before {
+    border-radius: 50%;
+}
+
+
+
+.widget_ayarlari {
+	    width: 100%;
+    height: 100%;
+    background: white;
+    position: absolute;
+	display:none;
+}
+
+.wifi_ayarlari {
+	    width: 100%;
+    height: 100%;
+    background: white;
+    position: absolute;
+	display:none;
+}
+
+.wifin {
+	border: none;
+    background: #efefef;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.arkaplan_ayarlari, .tema_ayarlari, .ikonlar, .cerceveler {
+	    width: 100%;
+    height: 100%;
+    background: white;
+    position: absolute;
+	display:none;
+		overflow-y: scroll;
+}
+
+
+.havadurumu-widget {
+	    width: -webkit-fill-available;
+	    margin-left: 10px;
+	    margin-right: 10px;
+	    position: relative;
+	    top: -6vh;
+	    border-radius: 10px;
+	    background: url(../img/app_details/wg1.png);
+	    background-size: cover;
+	    height: 12vh;
+}
+
+.takvim-widget {
+	display: none;
+	width: -webkit-fill-available;
+	margin-left: 10px;
+	margin-right: 10px;
+	position: relative;
+	top: -3vh;
+	margin-bottom: 15px;
+	height: 12vh;
+	border-radius: 10px;
+	background: url(../img/app_details/wg2.png) 0% 0% / cover;
+}
+
+
+.ark {
+	width: 90px;
+	height: 200px;
+	background-size: cover;
+	margin-left: 8px;
+	float: left;
+	border-radius: 10px;
+	margin-right: 3px;
+	margin-top: 10px;
+}
+ 
+
+.arkaplan_ayarlari::-webkit-scrollbar { display:none; }
+
+.tema_ayarlari::-webkit-scrollbar { display:none; }
+
+.ikonlar::-webkit-scrollbar { display:none; }
+
+.listekutu::-webkit-scrollbar { display:none; }
+	.ikonlar p {
+	text-align: center!important;
+    color: white;
+    text-shadow: 0px 0px 4px black;
+    font-size: 17px;
+    margin-top: 40px;
+    background: #00000085;
+    border-radius: 30px;
+ 
+	}
+	
+	.listekutu {
+    width: -webkit-fill-available;
+    background: #eaeaea;
+    padding: 1px;
+    border-top: 1px solid #dedede;
+	 border-bottom: 1px solid #dedede;
+	}
+	
+	.listekutu p {
+		    margin-left: 10px;
+    font-size: 15px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+	text-align:center;
+	}

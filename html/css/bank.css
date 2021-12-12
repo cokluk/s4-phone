@@ -1,0 +1,572 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@900&display=swap');
+
+.bank-app {
+    display: none;
+    height: 100%;
+    width: 100%;
+    background: #ffffff;
+    overflow: hidden;
+}
+
+.notlar-app {
+    display: none;
+    height: 100%;
+    width: 100%;
+    background: #ffffff;
+    overflow: hidden;
+}
+
+.notlar-app-header > p {
+    line-height: 10vh;
+}
+
+
+.notlar-app-header {
+    position: absolute;
+    width: 100%;
+    height: 4vh;
+    top: 4vh;
+ 
+}
+
+.bank-app-header {
+    position: absolute;
+    width: 100%;
+    height: 4vh;
+    top: 4vh;
+ 
+}
+ 
+ 
+ 
+.bank-app-accounts {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 70%;
+    background-color: #ffffff;
+    top: 13vh;
+    left: 0vh;
+}
+.bank-app-invoices {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 43vh;
+    background-color: #ffffff;
+    top: 10vh;
+    left: 30vh;
+}
+.bank-app-invoices-list {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #ffffff;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.bank-app-invoices-list::-webkit-scrollbar {
+    width: .5vh;
+    background-color: white;
+}
+.bank-app-invoice {
+    position: relative;
+    height: 6vh;
+    width: 100%;
+    letter-spacing: .05vh;
+    background: #ffffff;
+    box-shadow: inset 0px 0px 1px 0px black;
+}
+.bank-app-invoice-title {
+    position: absolute;
+    top: 1vh;
+    left: 2vh;
+    color: black;
+    font-family: 'ios';
+    font-size: 1.3vh;
+}
+.bank-app-invoice-amount {
+    position: absolute;
+    bottom: 1vh;
+    left: 2vh;
+    color: rgb(255 129 0 / 78%);
+    font-family: 'Heebo', sans-serif;
+    font-size: 1.22vh;
+}
+.bank-app-invoice-buttons {
+    position: absolute;
+    right: 0.2vh;
+    bottom: 1.9vh;
+    height: 3vh;
+    width: 7vh;
+    text-align: center;
+    line-height: 3.5vh;
+}
+.bank-app-invoice-buttons > i {
+    margin-left: .5vh;
+    margin-right: .5vh;
+    font-size: 2vh;
+    color: #008c25;
+}
+.pay-invoice {
+    color: #4cd137;
+    transition: .1s;
+}
+.pay-invoice:hover {
+    color: #70f75b;
+}
+.decline-invoice {
+    color: #e84118;
+    transition: .1s;
+}
+.decline-invoice:hover {
+    color: #ff5f38;
+}
+.bank-app-transfer {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    top: -100%;
+    z-index: 500;
+}
+.bank-app-account {
+    position: absolute;
+    background-color: #fafafa;
+    height: 9.5vh;
+    width: 80%;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 1.5vh;
+    border-radius: .3vh .3vh 0 0;
+    border-bottom: .2vh solid #ffffff;
+    transition: .1s;
+}
+.bank-app-account:hover{
+    color:white;
+    border-bottom: .2vh solid #0050A9;
+}
+.bank-app-account-title {
+    position: absolute;
+    top: 1vh;
+    left: 1vh;
+    font-family: 'Heebo', sans-serif;
+    letter-spacing: .1vh;
+    color: black;
+    font-size: 1.1vh;
+}
+.bank-app-account-number {
+    background: none;
+    position: absolute;
+    top: 4vh;
+    left: 2vh;
+    font-family: 'ios';
+    letter-spacing: .1vh;
+    width: 100%;
+    font-size: 1.1vh;
+    outline: none;
+    border: none;
+    color: #000000;
+}
+.bank-app-account-number::selection {
+    background: transparent;
+    outline: none;
+    border: none;
+    color: black;
+}
+.bank-app-account-balance {
+    position: absolute;
+    top: 6.1vh;
+    left: 2vh;
+    font-family: 'ios';
+    letter-spacing: 0.1vh;
+    color: #565656;
+    font-size: 2.1vh;
+}
+  
+.bank-app-loaded {
+    display: block;
+    padding-left: 0px;
+	
+}
+.bank-app-loading {
+    position: absolute;
+    top: 0;
+    left: 0vh;
+    display: block;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+.bank-logo {
+    position: absolute;
+    width: 10vh;
+    margin: 0 auto;
+    left: 0vh;
+    right: 0;
+    top: 22vh;
+    z-index: 101;
+}
+
+#bank-text {
+    position: absolute;
+    top: 24vh;
+    left: 9vh;
+    font-size: 4.5vh;
+    color: white;
+    font-family: 'Heebo', sans-serif;
+    z-index: 100;
+    opacity: 0;
+}
+
+.bank-app-transfer-header {
+    position: absolute;
+    top: 4.5vh;
+    left: 6vh;
+    color: black;
+    font-family: 'ios';
+    font-size: 2.7vh;
+}
+
+#bank-transfer-iban {
+    position: absolute;
+    top: 12vh;
+    background: none;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #e6e6e6;
+    font-family: 'ios';
+    /* background: rgb(33,36,43); */
+    /* background: linear-gradient(0deg, rgba(33,36,43,0.5) 0%, rgba(178,132,254,0) 100%); */
+    height: 3.5vh;
+    width: -webkit-fill-available;
+    text-indent: .4vh;
+    transition: .1s;
+    margin-left: 15px;
+    margin-right: 15px;
+    font-size: 1.7vh;
+    color: black;
+}
+
+#bank-transfer-iban::-webkit-inner-spin-button {
+    display: none;
+}
+
+#bank-transfer-iban:focus {
+    border-bottom: 2px solid #848484;
+}
+
+#bank-transfer-iban:valid {
+    border-bottom: 2px solid #6ab04c;
+}
+
+#bank-transfer-amount {
+    position: absolute;
+    top: 18vh;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #eaeaea;
+    font-family: 'ios';
+    height: 3.5vh;
+    margin-left: 15px;
+    margin-right: 15px;
+    width: -webkit-fill-available;
+    text-indent: .4vh;
+    transition: .1s;
+    font-size: 1.7vh;
+    color: black;
+}
+
+#bank-transfer-amount::-webkit-inner-spin-button {
+    display: none;
+}
+
+#bank-transfer-amount:focus {
+    border-bottom: 2px solid gray;
+}
+
+#bank-transfer-amount:valid {
+}
+
+.bank-transfer-iban-icon  {
+    position: absolute;
+    top: 13.5vh;
+    left: 3.4vh;
+    font-size: 2.1vh;
+    color: black;
+}
+
+.bank-transfer-amount-icon  {
+    position: absolute;
+    top: 19.2vh;
+    left: 3.5vh;
+    font-size: 2.4vh;
+    color: black;
+}
+
+.bank-transfer-mycontacts-icon  {
+    position: absolute;
+    top: 25.5vh;
+    left: 3.5vh;
+    font-size: 2.2vh;
+    color: black;
+}
+
+.bank-transfer-mycontacts-icon:hover {
+    color: gray;
+}
+
+.bank-app-transfer-buttons {
+    position: absolute;
+    bottom: 0;
+    height: 5vh;
+    width: 100%;
+}
+
+.bank-app-transfer-button {
+    position: relative;
+    float: left;
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    line-height: 4.5vh;
+    font-family: 'Heebo', sans-serif;
+    color: black;
+    font-size: 1.4vh;
+    border-top: .2vh solid gray00;
+    transition: .1s;
+}
+
+.bank-app-transfer-button:hover {
+    border-top: .2vh solid gray;
+}
+
+.bank-app-my-contacts {
+    display: none;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: -100%;
+    background: #ffffff;
+    z-index: 500;
+}
+
+.bank-app-my-contacts::-webkit-scrollbar {
+    display: none;
+}
+
+.bank-app-my-contacts-list::-webkit-scrollbar {
+    display: none;
+}
+
+.bank-app-my-contacts-header {
+    position: relative;
+    left: 1vh;
+    padding: 5vh 0 0 2.85vh;
+    font-family: 'ios';
+    font-size: 3vh;
+    color: black;
+}
+
+.bank-app-my-contacts-list {
+    position: absolute;
+    height: 65%;
+    width: -webkit-fill-available;
+    margin: 0 auto;
+    right: 0;
+    top: 14vh;
+    margin-left: 14px;
+    margin-right:  14px;
+    overflow-y: scroll;
+}
+
+.bank-app-my-contact {
+    position: relative;
+    width: 100%;
+    height: 4.5vh;
+    margin-top: .1vh;
+    background-color: #ffffff;
+    border-radius: 2vh;
+    transition: .1s;
+    border: 1px solid #e4e4e4;
+}
+
+.bank-app-my-contact:hover {
+    background-color:  #e4e4e4;
+}
+
+.bank-app-my-contact-firstletter {
+    position: absolute;
+    background-color: #eb4d4b;
+    height: 3.5vh;
+    width: 3.5vh;
+    margin: .4vh;
+    margin-left: .35vh;
+    text-align: center;
+    line-height: 3.6vh;
+    border-radius: 50%;
+    font-family: 'Heebo', sans-serif;
+    color: white;
+}
+
+.bank-app-my-contact-name {
+    position: absolute;
+    left: 5vh;
+    line-height: 4.5vh;
+    font-family: 'Heebo', sans-serif;
+    font-size: 1.4vh;
+    color: black;
+}
+
+.bank-app-my-contacts-list-header {
+    position: absolute;
+    top: 12vh;
+    height: 5vh;
+    width: 100%;
+}
+
+#bank-app-my-contact-search {
+    position: absolute;
+    border: none;
+    background: white;
+    top: -1.8vh;
+    margin: 0 auto;
+    border-radius: 30px;
+    width: -webkit-fill-available;
+    margin-left: 15px;
+    margin-right: 15px;
+    right: 0;
+    opacity: 1.0;
+    font-family: 'ios';
+    outline: none;
+    text-indent: 1vh;
+    box-shadow: 0px 0px 6px #c5c5c5;
+    z-index: 100;
+}
+
+#bank-app-my-contact-search::placeholder{
+    font-family: 'Heebo', sans-serif;
+    color: rgba(39, 39, 39, 0.9);
+}
+
+.bank-app-my-contacts-list-back {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 5vh;
+    text-align: center;
+    line-height: 5vh;
+    text-transform: uppercase;
+    color: black;
+    font-family: 'Heebo', sans-serif;
+    font-size: 2.0vh;
+    background: #ffffff;
+    transition: .1s;
+}
+
+.bank-app-my-contacts-list-back:hover {
+    background-color: #dadada;
+}
+
+#bar1 {
+	    color: #5d5d5d;
+    left: 1.5vh;
+    position: relative;
+    font-size: 22px;
+    top: 1vh;
+}
+
+#b1 {
+	position: absolute;
+	top: 1vh;
+	left: 10vh;
+	font-family: 'ios';
+	font-size: 16px;
+	text-shadow: 0 0 20px #7b7b7b;
+	font-family: 'ios';
+	font-weight: 800;
+	font-size: 28px;
+}
+
+
+.cart {
+	    width: -webkit-fill-available;
+	    background: #fafafa;
+	    height: 170px;
+	    margin-left: 15px;
+	    margin-right: 15px;
+	    position: relative;
+	    box-shadow: 0px 0px 7px grey;
+	    top: 10vh;
+	    border-radius: 5px;
+	    overflow:hidden;
+	    margin-top: 7px;
+}
+
+.cart img {
+	margin-top: 10px;
+    width: 15%;
+    border-radius: 100%;
+    position: absolute;
+    left: 1vh;
+}
+
+.cart .isx {
+	margin-top: 14px;
+    width: 15%;
+    border-radius: 100%;
+    position: absolute;
+    left: 1vh;
+	    font-size: 22px;
+     
+    margin-left: 3px;
+}
+
+.cart h2 {
+	font-size: 12px;
+    left: 2vh;
+    position: relative;
+    top: -1vh;
+}
+
+.cart h1 , .ubk {
+	
+	    position: absolute;
+    top: 0.3vh;
+    left: 6vh;
+    font-weight: 500;
+    font-size: 16px;
+	 
+ 
+    font-family: 'ios';
+    margin-top: 15px;
+	
+}
+
+
+.grid-container {
+  display: grid;
+  margin-top: -6px;
+  grid-template-columns: 60px 60px 60px;
+  padding: 10px;
+}
+.grid-item {
+ 
+border: none;
+    box-shadow: inset 0px 0px 4px #c3c3c3;
+    border-radius: 5px;
+  padding:2px;
+  font-size: 30px;
+  margin-left:5px;
+  text-align: center;
+}
+
+.grid-item p {
+	    font-size: 10px;
+}
+}
+
+

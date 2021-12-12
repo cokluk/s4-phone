@@ -1,0 +1,61 @@
+.hesapmakinesi-app {
+    display: none;
+    height: 110%;
+    width: 100%;
+    background: black;
+    overflow: hidden;
+}
+
+.button{
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+    margin: 3px;
+    cursor: pointer;
+    background-color: #3b3b3b;
+    border: none;
+    color: white;
+    border-radius: 15px;
+    transition: 200ms all;
+}
+.text{
+    width: 230px;
+    font-size: 50px;
+    padding: 5px;
+    border: none;
+    background-color: black;
+    color: white;
+    border-radius: 15px;
+    margin-bottom: 40px;
+    margin-top: 5px;
+    text-align: right;
+}
+.main{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%)translateY(-35%);
+}
+
+.button:hover {
+  background-color: #464646;  
+}
+
+input:focus {
+    outline: none;
+}
+
+input[value="C"], input[value="*"], input[value="/"] {
+    color: black;
+    background-color: #7a7a7a;
+}
+input[value="C"]:hover, input[value="*"]:hover, input[value="/"]:hover {
+    background-color: #969696;
+}
+input[value="-"], input[value="+"], input[value="="],input[value="<"] {
+    color: black;
+    background-color: rgb(204, 150, 1);
+}
+input[value="-"]:hover, input[value="+"]:hover, input[value="="]:hover,input[value="<"]:hover {
+    background-color: rgb(231, 171, 6);
+}

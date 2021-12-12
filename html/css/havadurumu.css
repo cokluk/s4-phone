@@ -1,0 +1,216 @@
+
+.havadurumu-app {
+    display: none;
+    height: 110%;
+    width: 100%;
+    background: linear-gradient(45deg, #00c4ff, #00a1ff);
+    overflow: hidden;
+    text-align: center;
+}
+
+.havadurumu-name {
+    position: absolute;
+    left: 7vh;
+    color: #ee5253;
+    line-height: 7vh;
+    font-family: 'Samsung Sans Regular';
+}
+
+
+.havadurumu-s {
+    position: relative;
+    height: 7vh;
+    width: 100%;
+    background-color: rgb(255 255 255 / 38%);
+    box-shadow: 0 0 1vh .1vh rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    transition: .08s linear;
+    margin-bottom: 1vh;
+}
+
+
+.havadurumu-img {
+    position: relative;
+    line-height: 7vh;
+ 
+    padding-bottom: 1.1vh;
+    padding-left: 1.6vh;
+    padding-right: 1.6vh;
+ 
+    top: -4px;
+    color: white;
+    font-family: 'ios';
+    font-size: 1.8vh;
+    transition: .05s linear;
+	
+
+    left: -9vh;
+    border-radius: 0px;
+    margin: 0;
+}
+
+.havadurumu-header {
+    position: absolute;
+    width: 100%;
+    height: 7vh;
+    top: 0;
+    color: #fff;
+    font-family: 'Samsung Sans Medium';
+    font-size: 1.8vh;
+}
+
+
+.havadurumu-durum , .havadurumu-durum2 {background: url(../img/app_details/weather-icons.png) no-repeat -688px -358px;width: 41px;height: 41px;margin-bottom: 70px;margin-top: 85px;}
+
+.drm , .drm2 {
+    color: white;
+    font-family: ios;
+    font-size: 16px;
+    top: -4vh;
+    position: relative;
+    text-align: center;
+    background: none;
+    border: none;
+    left: 0vh;
+    width: -webkit-fill-available;
+}
+
+
+.ic h2 {
+	font-size: 16px;
+    color: white;
+    font-family: 'ios';
+    position: relative;
+    top: 1vh;
+}
+
+
+.havadurumu-durum h2 {
+    font-size: 12px;
+    color: white;
+    top: 6vh;
+    position: relative;
+}
+
+.havadurumu-app .ic {
+	width: -webkit-fill-available;
+	background: rgb(0 0 0 / 18%);
+	height: 180px;
+	margin-left: 15px;
+	margin-right: 15px;
+	border-radius: 12px;
+	top: -3vh;
+	position: relative;
+}
+
+.havadurumu-header > p {
+    line-height: 10vh;
+}
+
+.havadurumu-header > span {
+    position: absolute;
+    top: 8vh;
+    left: 8vh;
+    font-size: 1.2vh;
+    height: 2vh;
+    color: rgb(255, 255, 255);
+}
+
+.havadurumu2-list {
+    position: absolute;
+    background-color: #00000000;
+    width: 90%;
+    height: 83%;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    bottom: 3%;
+    overflow-y: scroll;
+}
+
+.havadurumu2-list::-webkit-scrollbar {
+    display: none;
+}
+
+.havadurumu-list {
+    position: relative;
+    width: 95%;
+    height: 6vh;
+    top: 7vh;
+    background-color: rgba(31, 31, 31, 0.89);
+    margin: 2.5%;
+    border-radius: .5vh;
+}
+
+.havadurumu-list-firstletter {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 3.5vh;
+    height: 3.5vh;
+    background-color: #1f1f1f;
+    text-align: center;
+    left: 1vh;
+    line-height: 3.5vh;
+    border-radius: 50%;
+    font-family: 'Samsung Sans Medium';
+    font-size: 1.8vh;
+
+    color: rgb(255, 255, 255);
+}
+
+.havadurumu-list-fullname {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 5.5vh;
+    font-family: 'Samsung Sans Medium';
+    font-size: 1.5vh;
+
+    max-width: 14vh;
+
+    white-space: nowrap;
+    overflow: hidden !important;
+    text-overflow: ellipsis;
+
+    color: rgb(255, 255, 255);
+}
+
+.no-havadurumu {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-family: 'Samsung Sans Medium';
+    font-size: 1.3vh;
+
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+
+    max-width: 14vh;
+
+    color: rgb(255, 255, 255);
+}
+
+.havadurumu-list-call {
+    color: white;
+    position: absolute;
+    top: 25%;
+    transform: translateY(-50%);
+
+    right: 2vh;
+    font-size: 2vh;
+    transform: rotate(90deg);
+
+    transition: .08s ease-in-out;
+}
+
+.havadurumu-list-call:hover {
+    color: rgb(66, 161, 11);
+    opacity: .8;
+
+    transform: rotate(0deg);
+
+    cursor: pointer;
+}
