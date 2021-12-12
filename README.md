@@ -6,3 +6,22 @@ Leak sürümü el altından satılmaktaydı bizde bu durumu bitirmek amacıyla s
 Orjinal hali değildir leak sürümündeki birkaç gördüğüm hatayı fixleyip paylaştığım bir sürümdür.
 
 Orjinal halinin kaynak dosyası elimde yok.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+![Sayaç](https://profile-counter.glitch.me/s4-phone/count.svg)
