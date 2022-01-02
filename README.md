@@ -15,7 +15,7 @@ Orjinal halinin kaynak dosyası elimde yok.
 
 
 
-
+for sql: https://www.rarefivem.com/threads/s4-phone-edrp-telefonu.6433/
 
 
 
