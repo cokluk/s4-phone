@@ -1,4 +1,4 @@
-QBCore = nil
+local QBCore = exports['qb-core']:GetCoreObject()
 
 FENER = false
 local old_tel
@@ -9,16 +9,6 @@ local lastBM2
 local SonGonderilen = {}
 
 Citizen.CreateThread(function() 
-    while true do
-        Citizen.Wait(1)
-        if QBCore == nil then
-            TriggerEvent('QBCore:GetObject', function(obj) QBCore = obj end) 
-            Citizen.Wait(200)
-        end
-    end
-    while QBCore.Functions.GetPlayerData().job == nil do
-        Citizen.Wait(10)
-    end
     PlayerData = QBCore.Functions.GetPlayerData()
     Wait(200)
     LoadPhone()
@@ -70,34 +60,28 @@ end
 
 
 Citizen.CreateThread(function()
-
 	while true do 
-	  local uyku = 2000
-	  if Config.BlackMarkets then 
-	  local px, py, pz = table.unpack(GetEntityCoords(PlayerPedId()))
-          
-                for i = 1, #Config.BlackMarkets, 1 do
-                    local dx, dy, dz = table.unpack(Config.BlackMarkets[i].coords)
- 
-
-                    if GetDistanceBetweenCoords(dx, dy, dz, px, py, pz, true) <= Config.BlackMarket_closeness then
-						 lastBM2 = i
-			             uyku = 5
-				    else 
-					   if not lastBM2 then 
-					     SendNUIMessage({ action = "bm" , state = 0 })
-					   end
-					   Wait(1000)
-					   lastBM2 = nil
+	    local uyku = 2000
+	    if Config.BlackMarkets then 
+            local px, py, pz = table.unpack(GetEntityCoords(PlayerPedId()))
+            for i = 1, #Config.BlackMarkets, 1 do
+                local dx, dy, dz = table.unpack(Config.BlackMarkets[i].coords)
+                if GetDistanceBetweenCoords(dx, dy, dz, px, py, pz, true) <= Config.BlackMarket_closeness then
+                    lastBM2 = i
+                    uyku = 5
+                else 
+                    if not lastBM2 then 
+                        SendNUIMessage({ action = "bm" , state = 0 })
                     end
-            
+                    Wait(1000)
+                    lastBM2 = nil
                 end
-             
- 
-		 end
-	  Citizen.Wait(uyku)	
+            end
+	    end
+	    Citizen.Wait(uyku)	
 	end
 end)
+
 -- Code
 local PlayerJob = {}
 
@@ -3030,8 +3014,3 @@ end)
 function FtoC( f )
 	return ((f - 32) * (5 / 9))
 end
-
-
- 
-
- 
